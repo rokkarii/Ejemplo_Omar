@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Login</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+	   function mostrar1(){
+	   document.getElementById("contenedor1").style.display='none';
+	   document.getElementById("contenedor2").style.visibility='visible';
+	   }
+	   function mostrar2(){
+	   document.getElementById("contenedor1").style.display='block';
+	   document.getElementById("contenedor2").style.visibility='hidden';
+	   }
+    </script>
+</head>
+<body>
+    <div id="header"><center><img src="images/Bienvenid.png"></center></div>
+    <div id="contenedor1" class="container2" style="display:none;">
+        <center>
+          <p>&nbsp;</p>
+          <span onClick="mostrar1()"><font face="Agency FB" size="6"><strong>Inciar Sesion</strong></strong></font></span>
+          <p>&nbsp;</p><p>&nbsp;</p>
+        <img src="images/estudiante.png" onClick="mostrar1()">
+          <table width="271">
+            <tr>
+              <td width="111" height="29"><font face="arial" size="4">Usuario:</font></td>
+              <td width="120"><input name="text"" type="text" name:"nombre/></td>
+            </tr>
+            <tr>
+              <td height="37"><font face="arial,verdana" SIZE=4>Password:</td>
+              <td><input name="password"" type="password" name:"password/></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right"><p>&nbsp;</p>
+                  <button class="btn btn-danger" type="reset">
+                  <span class="glyphicon glyphicon-remove"></span> Limpiar                  </button>
+                <button class="btn btn-danger" name="aceptar">
+                <span class="glyphicon glyphicon-ok"></span> Aceptar
+                  </button></td>
+            </tr>
+          </table>
+        </center>
+    </div>
+    <div id="contenedor2" class="container"><p></p>
+        <center><span onClick="mostrar2()"><font face="Agency FB" size="6"><strong>Para acceder al contenido debes iniciar sesion</strong></font></span><p>&nbsp;</p><p>&nbsp;</p>
+        <img src="images/sesiones.png" onClick="mostrar2()">
+        </center>
+    </div>
+</body> 
+</html>
